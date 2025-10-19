@@ -22,9 +22,6 @@ def normalize_phone(phone_number, raw_numbers=None):
     elif sanitized.startswith('380'):
         sanitized = '+' + sanitized
         return sanitized   
-    elif sanitized.startswith('0'):
-        sanitized = '+38' + sanitized
-        return sanitized
     else:
         sanitized = '+38' + sanitized
         return sanitized
