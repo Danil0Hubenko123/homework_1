@@ -1,10 +1,11 @@
 # Завдання 2
+import random
+min = 1
+max = 1000
+quantity = 6
+
 def get_numbers_ticket(min, max, quantity):
     # Задані параметри
-    min = 1
-    max = 1000
-    quantity = 6
-    import random
     lottery_numbers = []
     # Розрахунок унікальних чисел
     if quantity > (max - min + 1):
@@ -17,5 +18,5 @@ def get_numbers_ticket(min, max, quantity):
     lottery_numbers.sort()        
     return lottery_numbers    
 # Вивід лотерейних чисел
-lottery_numbers = get_numbers_ticket(min=None, max= None, quantity=None)
+lottery_numbers = get_numbers_ticket(min, max, quantity)
 print("Ваші лотерейні числа:", lottery_numbers)
